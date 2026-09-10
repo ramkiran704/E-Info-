@@ -1,0 +1,53 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #46978f;
+  border-radius: 10px;
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(76, 8, 8, 0.15);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  font-family: 'Times New Roman', Times, serif ;
+}
+.rightSection {
+  display: flex;
+  align-items: center;
+  gap: 2rem; 
+}
+.nav {
+  display: flex;
+  gap: 1.5rem;
+  align-items: normal;
+}
+
+.navLink {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.navLink:hover {
+  color: #ffffff;
+}
+
+.loginButton {
+  padding: 0.5rem 1rem;
+  background-color: #021211;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.loginButton:hover {
+  background-color: #536679;
+}
