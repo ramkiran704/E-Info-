@@ -1,0 +1,193 @@
+.pageContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f4f6f9;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.mainLayout {
+  display: flex;
+  justify-content: center; 
+  width: 100%;
+  margin-top: 1.5rem;
+}
+
+.contentArea {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 1000px; 
+  margin: 0 auto;    
+}
+.benefitSection, .closingSection, .advertisementBanner {
+  background: #ffffff;
+  align-items: center;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+
+.sectionTitle {
+    align-items: center;
+  font-size: 1.4rem;
+  text-align: center;
+  margin-bottom: 1.2rem;
+  color: #123A6F;
+}
+
+.subTitle {
+  font-size: 1.1rem;
+  margin-bottom: 0.8rem;
+  color: #333333;
+}
+
+.categoryGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 1rem;
+}
+
+.categoryCard {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.8rem 1rem;
+  background-color: #123A6F;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.categoryCard:hover {
+  background-color: #1a4f94;
+  transform: translateY(-2px);
+}
+
+.catIcon {
+  font-size: 1.1rem;
+}
+
+.closingTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.closingTable th, .closingTable td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #eaeaea;
+  font-size: 0.95rem;
+}
+
+.closingTable th {
+  background-color: #f8f9fa;
+  color: #444;
+}
+
+.deadlineDate {
+  color: #d9534f;
+  font-weight: 600;
+}
+
+.messageBoxContainer {
+  display: flex;
+  background: white;
+  padding: 0.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  gap: 0.5rem;
+}
+
+.messageInput {
+  flex: 1;
+  padding: 0.6rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  outline: none;
+}
+
+.sendButton {
+  background-color: #3CB043;
+  color: white;
+  border: none;
+  padding: 0 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.advertisementBanner {
+  background: #e9ecef;
+  text-align: center;
+  padding: 1rem;
+  color: #6c757d;
+  font-weight: 500;
+  border: 2px dashed #ced4da;
+}
+
+/* Chatbot Sidebar Styles */
+.chatbotSidebar {
+  background: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  overflow: hidden;
+  height: 500px;
+}
+
+.chatbotHeader {
+  background-color: #123A6F;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+}
+
+.chatbotBody {
+  flex: 1;
+  padding: 1rem;
+  background-color: #fcfcfc;
+  overflow-y: auto;
+}
+
+.chatWelcome {
+  background: #e2e8f0;
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.chatbotInputArea {
+  display: flex;
+  padding: 0.75rem;
+  border-top: 1px solid #eee;
+  gap: 0.5rem;
+}
+
+.chatbotInputArea input {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  outline: none;
+}
+
+.chatbotInputArea button {
+  background-color: #123A6F;
+  color: white;
+  border: none;
+  padding: 0.5rem 0.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+}

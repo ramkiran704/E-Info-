@@ -1,0 +1,132 @@
+.loginContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1f4b8e 0%, #123a6f 100%); /* Primary blue theme */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 1rem;
+}
+
+.loginCard {
+  background: #ffffff;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 400px;
+}
+
+.cardHeader {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.appName {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #123a6f;
+  margin: 0;
+  letter-spacing: -0.5px;
+}
+
+.loginTitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #555555;
+  margin-top: 0.3rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.inputGroup label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #333333;
+}
+
+.inputWrapper {
+  display: flex;
+  align-items: center;
+  background-color: #f8f9fa;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  padding: 0 0.75rem;
+  transition: border-color 0.2s;
+}
+
+.inputWrapper:focus-within {
+  border-color: #1f4b8e;
+  background-color: #ffffff;
+}
+
+.inputWrapper i {
+  color: #6c757d;
+  margin-right: 0.75rem;
+  font-size: 0.95rem;
+}
+
+.inputWrapper input {
+  width: 100%;
+  padding: 0.75rem 0;
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 0.95rem;
+  color: #333333;
+}
+
+.loginBtn {
+  margin-top: 0.5rem;
+  background-color: #1f4b8e;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.loginBtn:hover {
+  background-color: #123a6f;
+}
+
+.loginBtn:active {
+  transform: scale(0.98);
+}
+
+.registerPrompt {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: #666666;
+}
+
+.registerLink {
+  color: #3cb043;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  transition: opacity 0.2s;
+}
+
+.registerLink:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
