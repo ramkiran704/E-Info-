@@ -1,13 +1,14 @@
 import React from 'react';
 import Header from '../components/Header.jsx';
 import styles from './Home.module.css';
+import government from "../assets/egovernment.png";
 export default function Home(){
     const categories = [
     { name: 'Education', icon: 'fa-graduation-cap' },
     { name: 'Employment', icon: 'fa-briefcase' },
     { name: 'Housing', icon: 'fa-house' },
     { name: 'Financial', icon: 'fa-chart-line' },
-    { name: 'Senior', icon: 'fa-person-cane' },
+    { name: 'Senior Citizen', icon: 'fa-person-cane' },
     { name: 'Disabled', icon: 'fa-wheelchair' },
     { name: 'Farmers', icon: 'fa-tractor' },
     { name: 'Healthcare', icon: 'fa-suitcase-medical' },
@@ -17,6 +18,12 @@ export default function Home(){
     return (
         <div className={styles.pageContainer}>
             <Header />
+            <div className={styles.imageSection}>
+                <img
+                src={government}
+                />
+
+            </div>
             <div className={styles.mainLayout}>
                 <div className={styles.contentArea}>
                     <section className={styles.benefitSection}>

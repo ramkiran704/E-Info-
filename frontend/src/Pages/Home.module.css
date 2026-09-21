@@ -191,3 +191,17 @@
   border-radius: 4px;
   cursor: pointer;
 }
+.imageSection {
+  display: flex;
+  justify-content: center;  
+  align-items: center;     
+  width: 100%;              
+  max-width: 1200px;      
+  margin: 0 auto;          
+}
+
+.imageSection img {
+  width: 100%;
+  max-width: 1000px;       
+  border-radius: 10px;
+}
