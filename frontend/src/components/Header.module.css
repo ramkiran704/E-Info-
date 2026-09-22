@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #46978f;
+  background-color: navy;
   border-radius: 10px;
   color: #ffffff;
   box-shadow: 0 2px 8px rgba(76, 8, 8, 0.15);
@@ -13,13 +13,17 @@
   font-size: 1.5rem;
   font-weight: 700;
   letter-spacing: -0.5px;
-  font-family: 'Times New Roman', Times, serif ;
+  font-family: 'Times New Roman', Times, serif;
+  display: flex; 
+  align-items: center;
 }
+
 .rightSection {
   display: flex;
   align-items: center;
   gap: 2rem; 
 }
+
 .nav {
   display: flex;
   gap: 1.5rem;
@@ -37,6 +41,22 @@
   color: #ffffff;
 }
 
+/* --- Added Styles for Settings Icon --- */
+.settingsLink {
+  color: #ffffff;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: transform 0.3s ease, opacity 0.2s ease;
+  opacity: 0.85;
+}
+
+.settingsLink:hover {
+  transform: rotate(90deg); /* Smooth spinning effect when hovered */
+  opacity: 1;
+}
+
 .loginButton {
   padding: 0.5rem 1rem;
   background-color: #021211;
@@ -50,4 +70,47 @@
 
 .loginButton:hover {
   background-color: #536679;
+}
+
+.settingsButton {
+  background: none;
+  color: #dce2e8;
+  border: none;
+  cursor: pointer;
+  font-size: 22px;
+  padding: 8px;
+}
+
+.settingsButton:hover {
+  transform: rotate(30deg);
+}
+
+.settingsMenu {
+  position: absolute;
+  top: 45px;
+  right: 0;
+  width: 200px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  padding: 8px 0;
+  z-index: 1000;
+}
+
+.settingsMenu a {
+  display: block;
+  padding: 12px 16px;
+  text-decoration: none;
+  color: #040562;
+  font-size: 15px;
+}
+
+.settingsMenu a:hover {
+  background-color: #676796;
+}
+.listName{
+  color: #020b42;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
 }
