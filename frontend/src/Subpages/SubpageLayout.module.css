@@ -1,0 +1,86 @@
+.pageWrapper {
+  min-height: 100vh;
+  background-color: #f4f6f9;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px 40px 20px;
+}
+
+.headerBanner {
+  background-color: #0b1953;
+  color: #ffffff;
+  padding: 30px 24px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.headerBanner h2 {
+  margin: 0 0 8px 0;
+  font-size: 1.8rem;
+}
+
+.headerBanner p {
+  margin: 0;
+  color: #d1d5db;
+}
+
+.loading {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #666;
+  padding: 40px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #0b1953;
+  font-size: 1.2rem;
+}
+
+.details {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.eligibility {
+  margin: 15px 0;
+  padding: 10px;
+  background-color: #eef2ff;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  color: #3730a3;
+}
+
+.applyBtn {
+  padding: 10px 16px;
+  background-color: #0b1953;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.applyBtn:hover {
+  background-color: #122880;
+}
