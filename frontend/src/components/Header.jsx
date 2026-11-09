@@ -5,12 +5,13 @@ import React, { useState, useEffect, useRef } from "react";
 export default function Header() {
   const [showSettings, setShowSettings] = useState(false);
   const settingsRef = useRef(null);
+
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if(
+      if (
         settingsRef.current &&
         !settingsRef.current.contains(event.target)
-      ){
+      ) {
         setShowSettings(false);
       }
     };
@@ -48,27 +49,31 @@ export default function Header() {
 
           {showSettings && (
             <div className={styles.settingsMenu}>
-
-              <a href="/profile" className={styles.listName}>
+              <Link 
+                to="/profile" 
+                className={styles.listName}
+                onClick={() => setShowSettings(false)}
+              >
                 Profile
-              </a>
+              </Link>
 
-              <a href="/help"className={styles.listName}>
+              <Link 
+                to="/help" 
+                className={styles.listName}
+                onClick={() => setShowSettings(false)}
+              >
                 Help
-              </a>
-
+              </Link>
             </div>
           )}
-
         </div>
 
         {/* Logout */}
-        <a href="/" className={styles.navLink}>
+        <Link to="/" className={styles.navLink}>
           <button className={styles.loginButton}>
             Log Out
           </button>
-        </a>
-
+        </Link>
       </div>
     </header>
   );
