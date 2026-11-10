@@ -1,0 +1,6 @@
+.container { max-width: 1000px; margin: 40px auto; padding: 0 20px 40px; }
+.headerBanner { background-color: #0b1953; color: #fff; padding: 30px 24px; border-radius: 8px; margin-bottom: 30px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; }
+.card { background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.06); }
+.eligibility { margin: 15px 0; padding: 10px; background-color: #eef2ff; border-radius: 6px; color: #3730a3; }
+.applyBtn { padding: 10px 16px; background-color: #0b1953; color: white; border: none; border-radius: 6px; cursor: pointer; }
